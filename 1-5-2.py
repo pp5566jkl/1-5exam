@@ -1,4 +1,5 @@
 class 行李:
+    
     def __init__(self,ID,weight,出發機場,目的地機場,所屬旅客姓名):
         self._ID = ID
         self._weight = weight
@@ -6,17 +7,11 @@ class 行李:
         self._目的地機場 = 目的地機場
         self._所屬旅客姓名 = 所屬旅客姓名
 
-    #def 查詢行李資料():
 
-def get_info(self):
-        return f"行李 ID: {self._ID}, 重量: {self._weight} 公斤, 出發機場: {self._出發機場}, 目的地機場: {self._目的地機場}, 所屬旅客姓名: {self._所屬旅客姓名}"
 
-# 辅助函数：根据行李 ID 查询行李信息
-def query_luggage_info(總行李, luggage_id):
-    for luggage in 總行李:
-        if luggage._ID == luggage_id:
-            return luggage.get_info()
-    return f"Luggage with ID {luggage_id} not found."
+def 查詢行李資料():
+    pass
+   
  
 def main():
    
@@ -24,15 +19,8 @@ def main():
     行李2 = 行李(256, 15, "C機場", "D機場", "小花")
     行李3 = 行李(389, 25, "E機場", "F機場", "小華")
 
-    
-    總行李 = [行李1, 行李2, 行李3]
-  
     輸入行李ID = int(input("請輸入您的行李ID:"))
     
-    result = query_luggage_info(總行李,輸入行李ID)
-
-    # 输出查询结果
-    print(result)
 
 if __name__ == "__main__":
     main()
@@ -48,3 +36,14 @@ class 登機證:
         self._座位位子 = 座位位子
         self._行李件數 = 行李件數
         self._行李ID = 行李ID
+
+def main():
+   
+    登機證1 = 行李(123, 20, "A機場", "B機場", "小明")
+    登機證2 = 行李(256, 15, "C機場", "D機場", "小花")
+    登機證3 = 行李(389, 25, "E機場", "F機場", "小華")
+
+
+if __name__ == "__main__":
+    main()
+
